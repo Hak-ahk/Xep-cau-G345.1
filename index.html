@@ -342,23 +342,71 @@
     <script>
     const topics = {
         "Tặng quà": [
-            { en: "This gift is for you.", vi: "Món quà này dành cho bạn.", emoji: "🎁" },
-            { en: "Thank you very much!", vi: "Cảm ơn bạn nhiều.", emoji: "😊" },
-            { en: "That book is for Nam.", vi: "Cuốn sách đó dành cho Nam.", emoji: "📖" },
-            { en: "I will give it to him.", vi: "Mình sẽ đưa cho bạn ấy.", emoji: "🤝" },
-            { en: "These flowers are for you.", vi: "Những bông hoa này dành cho bạn.", emoji: "💐" },
-            { en: "They’re beautiful! Thanks.", vi: "Hoa đẹp quá! Cảm ơn nhé.", emoji: "😍" },
-            { en: "Those toys are for the children.", vi: "Những món đồ chơi đó dành cho bọn trẻ.", emoji: "🧸" },
-            { en: "They will love them.", vi: "Chúng sẽ thích lắm.", emoji: "❤️" },
-            { en: "Here is a card for you.", vi: "Đây là tấm thiệp dành cho bạn.", emoji: "💌" },
-            { en: "It’s so nice.", vi: "Nó thật đẹp.", emoji: "😊" },
-            { en: "Here are some candies for you.", vi: "Đây là vài viên kẹo cho bạn.", emoji: "🍬" },
-            { en: "I love candies! Thanks.", vi: "Mình thích kẹo lắm! Cảm ơn.", emoji: "😋" },
-            { en: "Let’s buy a birthday cake for her.", vi: "Hãy mua bánh sinh nhật cho cô ấy.", emoji: "🎂" },
-            { en: "Good idea!", vi: "Ý hay đấy!", emoji: "💡" },
-            { en: "Let’s buy some flowers for Teacher’s Day.", vi: "Hãy mua hoa cho Ngày Nhà giáo.", emoji: "💐" },
-            { en: "Yes, she will be happy.", vi: "Vâng, cô sẽ vui lắm.", emoji: "😊" }
-        ],
+  { en: "This gift is for you.", vi: "Món quà này dành cho bạn.", emoji: "🎁" },
+  { en: "This is for you. I hope you like it.", vi: "Cái này cho bạn. Hy vọng bạn thích.", emoji: "🎁" },
+  { en: "I brought something special for you.", vi: "Mình mang một món quà đặc biệt cho bạn.", emoji: "🎁" },
+
+  { en: "Thank you very much!", vi: "Cảm ơn bạn nhiều.", emoji: "😊" },
+  { en: "Thanks a lot!", vi: "Cảm ơn nhiều nhé!", emoji: "😊" },
+  { en: "I really appreciate it!", vi: "Mình thật sự rất cảm kích!", emoji: "😊" },
+
+  { en: "That book is for Nam.", vi: "Cuốn sách đó dành cho Nam.", emoji: "📖" },
+  { en: "I bought this book for Nam.", vi: "Mình đã mua cuốn sách này cho Nam.", emoji: "📖" },
+  { en: "Give this to Nam, please.", vi: "Làm ơn đưa cái này cho Nam nhé.", emoji: "📖" },
+
+  { en: "I will give it to him.", vi: "Mình sẽ đưa cho bạn ấy.", emoji: "🤝" },
+  { en: "I’ll pass it to him.", vi: "Mình sẽ chuyển cho cậu ấy.", emoji: "🤝" },
+  { en: "He will get it from me.", vi: "Cậu ấy sẽ nhận từ mình.", emoji: "🤝" },
+
+  { en: "These flowers are for you.", vi: "Những bông hoa này dành cho bạn.", emoji: "💐" },
+  { en: "I picked these flowers for you.", vi: "Mình hái những bông hoa này cho bạn.", emoji: "💐" },
+  { en: "They’re fresh and beautiful!", vi: "Chúng tươi và đẹp lắm!", emoji: "💐" },
+
+  { en: "They’re beautiful! Thanks.", vi: "Hoa đẹp quá! Cảm ơn nhé.", emoji: "😍" },
+  { en: "So pretty! Thank you!", vi: "Thật xinh! Cảm ơn bạn!", emoji: "😍" },
+  { en: "I love them. Thanks a lot.", vi: "Mình thích lắm. Cảm ơn nhiều.", emoji: "😍" },
+
+  { en: "Those toys are for the children.", vi: "Những món đồ chơi đó dành cho bọn trẻ.", emoji: "🧸" },
+  { en: "Give the toys to the kids.", vi: "Đưa đồ chơi cho các bé nhé.", emoji: "🧸" },
+  { en: "They will enjoy these toys.", vi: "Chúng sẽ thích mấy món này.", emoji: "🧸" },
+
+  { en: "They will love them.", vi: "Chúng sẽ thích lắm.", emoji: "❤️" },
+  { en: "The kids will be so happy.", vi: "Lũ trẻ sẽ vui lắm luôn.", emoji: "❤️" },
+  { en: "I’m sure they’ll love these.", vi: "Mình chắc là chúng sẽ thích.", emoji: "❤️" },
+
+  { en: "Here is a card for you.", vi: "Đây là tấm thiệp dành cho bạn.", emoji: "💌" },
+  { en: "I made this card for you.", vi: "Mình làm tấm thiệp này cho bạn.", emoji: "💌" },
+  { en: "Open it, it’s from me.", vi: "Mở ra đi, của mình tặng đó.", emoji: "💌" },
+
+  { en: "It’s so nice.", vi: "Nó thật đẹp.", emoji: "😊" },
+  { en: "Wow, so beautiful!", vi: "Wow, đẹp quá chừng!", emoji: "😊" },
+  { en: "What a lovely card!", vi: "Tấm thiệp dễ thương quá!", emoji: "😊" },
+
+  { en: "Here are some candies for you.", vi: "Đây là vài viên kẹo cho bạn.", emoji: "🍬" },
+  { en: "Try some candy!", vi: "Nếm thử vài viên kẹo nhé!", emoji: "🍬" },
+  { en: "These sweets are yours.", vi: "Những viên kẹo này là của bạn.", emoji: "🍬" },
+
+  { en: "I love candies! Thanks.", vi: "Mình thích kẹo lắm! Cảm ơn.", emoji: "😋" },
+  { en: "Yummy! Thank you!", vi: "Ngon quá! Cảm ơn nhé!", emoji: "😋" },
+  { en: "Sweet and tasty! Thanks!", vi: "Ngọt và ngon quá! Cảm ơn!", emoji: "😋" },
+
+  { en: "Let’s buy a birthday cake for her.", vi: "Hãy mua bánh sinh nhật cho cô ấy.", emoji: "🎂" },
+  { en: "She’ll love a chocolate cake.", vi: "Cô ấy sẽ thích bánh sô-cô-la lắm.", emoji: "🎂" },
+  { en: "Let’s surprise her with a cake.", vi: "Hãy gây bất ngờ cho cô ấy bằng một cái bánh.", emoji: "🎂" },
+
+  { en: "Good idea!", vi: "Ý hay đấy!", emoji: "💡" },
+  { en: "I like that plan!", vi: "Mình thích ý tưởng đó!", emoji: "💡" },
+  { en: "Sounds great!", vi: "Nghe tuyệt đấy!", emoji: "💡" },
+
+  { en: "Let’s buy some flowers for Teacher’s Day.", vi: "Hãy mua hoa cho Ngày Nhà giáo.", emoji: "💐" },
+  { en: "Teachers will love the flowers.", vi: "Thầy cô sẽ thích những bông hoa này.", emoji: "💐" },
+  { en: "A small gift for Teacher’s Day.", vi: "Một món quà nhỏ cho Ngày Nhà giáo.", emoji: "💐" },
+
+  { en: "Yes, she will be happy.", vi: "Vâng, cô sẽ vui lắm.", emoji: "😊" },
+  { en: "She’ll smile for sure.", vi: "Cô sẽ cười vui lắm đó.", emoji: "😊" },
+  { en: "That will make her day!", vi: "Điều đó sẽ làm cô rất vui!", emoji: "😊" }
+]
+
         "Hỏi về người": [
             { en: "Who is that man?", vi: "Người đàn ông đó là ai?", emoji: "🤔" },
             { en: "He’s my father.", vi: "Ông ấy là bố mình.", emoji: "👨" },
